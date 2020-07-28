@@ -1,0 +1,5 @@
+:root{
+    @each $color, $hexvalue in $new-colors{
+        --#{$color} : #{$hexvalue}; 
+    }
+}

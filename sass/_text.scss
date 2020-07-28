@@ -1,0 +1,9 @@
+@each $color, $hexvalue in $new-colors {
+    .text-#{$color}{
+        color: $hexvalue !important;
+    }
+
+    a.text-#{$color}:hover, a.text-#{$color}:focus{
+        color: hover($hexvalue) !important;
+    }
+}

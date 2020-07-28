@@ -1,0 +1,49 @@
+$all-colors : (
+    'primary' : #007bff,
+    'secondary' : #6c757d,
+    'success' : #28a745,
+    'info' : #17a2b8,
+    'warning': #ffc107,
+    'danger': #dc3545,
+    'light' : #f8f9fa,
+    'dark' : #343a40,
+    'magic' : #ae42bd,
+    'juice' : #fd9800,
+    'ocean' : #00cca3,
+    'cake' : #ffb4bf
+);
+
+$new-colors : (
+    'magic' : #ae42bd,
+    'juice' : #fd9800,
+    'ocean' : #00cca3,
+    'cake' : #ffb4bf
+);
+
+$contrast-light : #fff;
+$contrast-dark : #212529;
+$contrasts : (
+    'primary' : $contrast-light,
+    'secondary' : $contrast-light,
+    'success' : $contrast-light,
+    'info' : $contrast-light,
+    'warning' : $contrast-dark,
+    'danger' : $contrast-light,
+    'light' : $contrast-dark,
+    'dark' : $contrast-light,
+    'magic' : $contrast-light,
+    'juice' : $contrast-light,
+    'ocean' : $contrast-light,
+    'cake' : $contrast-dark
+);
+
+$rainbow-steps : 360;
+$rainbow-duration : (
+    'xxs' : 0.5s,
+    'xs': 1s,
+    's' : 3s,
+    'm' : 5s,
+    'l' : 10s,
+    'xl' : 30s,
+    'xxl' : 60s,
+);

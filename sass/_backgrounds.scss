@@ -1,0 +1,5 @@
+@each $color, $hexvalue in $new-colors{
+    .bg-#{$color}{
+        background-color: $hexvalue !important;
+    }
+}

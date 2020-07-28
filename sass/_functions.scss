@@ -1,0 +1,15 @@
+@function hover($color){
+    @return darken($color,10%);
+}
+@function light($color){
+    @return lighten($color, 40%);
+}
+@function lighthover($color){
+    @return lighten($color,30%);
+}
+@function disable($color){
+    @return lighten($color,5%);
+}
+@function contrast($color) {
+    @return map-get($contrasts,$color)
+}

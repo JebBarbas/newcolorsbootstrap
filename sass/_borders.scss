@@ -1,0 +1,5 @@
+@each $color, $hexvalue in $new-colors{
+    .border-#{$color}{
+        border-color: $hexvalue !important;
+    }
+}

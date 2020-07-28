@@ -1,0 +1,70 @@
+.sidebar {
+    position: fixed;
+    top: 0px;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    transition: all .5s ease;
+    z-index: 6969;
+
+    &.toggled{
+        left: 0;
+    }
+
+    .sidebar-brand{
+        font-size: 22px;
+        text-align: center;
+        line-height: 70px;
+        user-select: none;
+
+        a{
+            text-decoration: none;
+        }
+    }
+
+    .sidebar-nav{
+        list-style: none;
+        padding:0;
+
+        .sidebar-link{
+            text-decoration: none;
+            padding-left: 40px;
+            display: block;
+            height: 100%;
+            width: 100%;
+            line-height: 50px;
+            font-size: 20px;
+            box-sizing: border-box;
+            transition: .5s;
+            box-shadow: 0 .125rem .25rem rgba(0,0,0,.075), 0 -.125rem .25rem rgba(0,0,0,.075);
+        }
+
+        .sidebar-item:hover .sidebar-link{
+            padding-left: 50px;
+        }
+    }
+}
+@each $color, $hexvalue in $all-colors {
+    .sidebar-#{$color}{
+        background-color: $hexvalue;
+        color: contrast($color);
+        hr{
+            border-top-color: $hexvalue;
+            margin-top: .5rem;
+            margin-bottom: .5rem;
+        }
+        .sidebar-brand{
+            background-color: hover($hexvalue);
+            a{
+                color: contrast($color);
+            }
+        }
+        .sidebar-nav{
+            .sidebar-item{
+                .sidebar-link{
+                    color: contrast($color);
+                }
+            }
+        }
+    }
+} 

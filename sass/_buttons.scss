@@ -1,0 +1,76 @@
+@each $color, $hexvalue in $new-colors{
+    .btn-#{$color}{
+        color: contrast($color);
+        background-color: $hexvalue;
+        border-color: $hexvalue;
+
+        &:hover{
+            color: contrast($color);
+            background-color: hover($hexvalue);
+            border-color: hover($hexvalue);
+        }
+
+        &.focus,&:focus{
+            color: contrast($color);
+            background-color: hover($hexvalue);
+            border-color: hover($hexvalue);
+            box-shadow: 0 0 0 0.2rem hover($hexvalue);
+        }
+
+        &.disabled,&:disabled{
+            color: contrast($color);
+            background-color: disable($hexvalue);
+            border-color: disable($hexvalue);
+        }
+
+        &:not(:disabled):not(.disabled) {
+            cursor: pointer;
+        
+            &:active,
+            &.active {
+                box-shadow: 0 0 0 0.2rem $hexvalue;
+        
+                &:focus {
+                    box-shadow: 0 0 0 0.2rem hover($hexvalue);
+                }
+            }
+        }
+    }
+
+    .btn-outline-#{$color}{
+        color: $hexvalue;
+        border-color: $hexvalue;
+
+        &:hover{
+            color: contrast($color);
+            background-color: $hexvalue;
+            border-color: $hexvalue;
+        }
+
+        &.focus,&:focus{
+            color: contrast($color);
+            background-color: $hexvalue;
+            border-color: $hexvalue;
+            box-shadow: 0 0 0 0.2rem $hexvalue;
+        }
+
+        &.disabled,&:disabled{
+            color: disable($hexvalue);
+            background-color: transparent;
+            border-color: disable($hexvalue);
+        }
+
+        &:not(:disabled):not(.disabled) {
+            cursor: pointer;
+        
+            &:active,
+            &.active {
+                box-shadow: 0 0 0 0.2rem $hexvalue;
+        
+                &:focus {
+                    box-shadow: 0 0 0 0.2rem hover($hexvalue);
+                }
+            }
+        }
+    }
+}

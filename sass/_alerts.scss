@@ -1,0 +1,15 @@
+@each $color, $hexvalue in $new-colors{
+    .alert-#{$color}{
+        color: $hexvalue;
+        background-color: light($hexvalue);
+        border-color: light($hexvalue);
+
+        & hr{
+            border-top-color: $hexvalue;
+        }
+
+        & .alert-link{
+            color: hover($hexvalue);
+        }
+    }
+}

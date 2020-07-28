@@ -1,0 +1,17 @@
+@each $color, $hexvalue in $new-colors{
+    .list-group-item-#{$color}{
+        color: $hexvalue;
+        background-color: light($hexvalue);
+
+        &.list-group-item-action:focus, &.list-group-item-action:hover{
+            color: $hexvalue;
+            background-color: lighthover($hexvalue);
+        }
+
+        &.list-group-item-action.active{
+            color: #fff;
+            background-color: $hexvalue;
+            border-color: $hexvalue;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+@each $color, $hexvalue in $new-colors {
+    .table-#{$color}{
+        &, > th, > td {
+            background-color: light($hexvalue);
+        }
+
+        th, td, thead th, tbody + tbody {
+        border-color: $hexvalue;
+      }
+    }
+
+    .table-hover {
+        .table-#{$color} {
+            &:hover {
+                background-color: lighthover($hexvalue);
+
+                > td, > th {
+                    background-color: lighthover($hexvalue);
+                }
+            }
+        }
+    }
+}
