@@ -1,36 +1,90 @@
-.circle {
-    background-color: transparent;
-    border: solid 2px gray;
-    width: 50px;
-    height: 50px;
+.circle{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    font-size: inherit;
+    font-weight: bold;
+    line-height: 1;
+    max-width: 100%;
+    max-height: auto;
+    text-align: center;
+    overflow: visible;
+    position: relative;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    border-radius: 50%;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
-    border-radius: 50%;   
-    display: inline-block;
+
+    width: 4rem;
+    height: 4rem;
+
 }
-.circle-block{
-    display: block;
+.circle-xxs{
+    width: 1rem;
+    height: 1rem;
 }
 .circle-xs{
-    width: 10px;
-    height: 10px;
+    width: 2rem;
+    height: 2rem;
 }
 .circle-sm{
-    width: 25px;
-    height: 25px;
+    width: 3rem;
+    height: 3rem;
 }
 .circle-lg{
-    width: 75px;
-    height: 75px;
+    width: 5rem;
+    height: 5rem;
 }
 .circle-xl{
-    width: 100px;
-    height: 100px;
+    width: 6rem;
+    height: 6rem;
+}
+.circle-xxl{
+    width: 7rem;
+    height: 7rem;
 }
 
-@each $color, $hexvalue in $all-colors{
+.circle-state-xxs{
+    width: .5rem;
+    height: .5rem;
+    transform: translate(-100%,75%);
+}
+.circle-state-xs{
+    width: 1rem;
+    height: 1rem;
+    transform: translate(-100%,75%);
+}
+.circle-state-sm{
+    width: 1.5rem;
+    height: 1.5rem;
+    transform: translate(-100%,75%);
+}
+.circle-state{
+    width: 2rem;
+    height: 2rem;
+    transform: translate(-100%,75%);
+}
+.circle-state-lg{
+    width: 2.5rem;
+    height: 2.5rem;
+    transform: translate(-100%,75%);
+}
+.circle-state-xl{
+    width: 3rem;
+    height: 3rem;
+    transform: translate(-100%,75%);
+}
+.circle-state-xxl{
+    width: 3.5rem;
+    height: 3.5rem;
+    transform: translate(-100%,75%);
+}
+
+@each $color, $hexvalue in $all-colors {
     .circle-#{$color}{
         background-color: disable($hexvalue);
         border-color: $hexvalue;
+        color: contrast($color);
     }
 }

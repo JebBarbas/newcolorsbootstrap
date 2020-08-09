@@ -1,17 +1,18 @@
 .callout {
+    background-color: #fff;
     padding: 1.25rem;
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
     border: 1px solid #eee;
-    border-left-width: .25rem;
+    border-left-width: .5rem;
     border-radius: .25rem;
 }
 
 @each $color, $hexvalue in $all-colors {
     .callout-#{$color}{
-        border-left-color: $hexvalue;
+        border-color: $hexvalue;
 
-        & .callout-title{
+        & .callout-text{
             color: $hexvalue;
         }
 

@@ -1,26 +1,27 @@
 .sidebar {
     position: fixed;
     top: 0px;
-    left: -250px;
-    width: 250px;
+    left: -220px;
+    width: 220px;
     height: 100vh;
     transition: all .5s ease;
     z-index: 6969;
+    user-select: none;
 
     &.toggled{
         left: 0;
     }
 
     .sidebar-brand{
-        font-size: 22px;
+        font-size: 1.5rem;
         text-align: center;
-        line-height: 70px;
-        user-select: none;
+        line-height: 4rem;
 
         a{
             text-decoration: none;
         }
     }
+}
 
     .sidebar-nav{
         list-style: none;
@@ -29,20 +30,31 @@
         .sidebar-link{
             text-decoration: none;
             padding-left: 40px;
-            display: block;
+            display: flex;
+            align-items: center;
+            
             height: 100%;
             width: 100%;
-            line-height: 50px;
-            font-size: 20px;
+
+            line-height: 3rem;
+            font-size: 1rem;
             box-sizing: border-box;
             transition: .5s;
-            box-shadow: 0 .125rem .25rem rgba(0,0,0,.075), 0 -.125rem .25rem rgba(0,0,0,.075);
+            box-shadow: 2px 0 10px rgba(0,0,0,.1);
         }
 
-        .sidebar-item:hover .sidebar-link{
-            padding-left: 50px;
+        .sidebar-item{
+            &:hover{
+                .sidebar-link{
+                    padding-left: 50px;
+                }
+            }
+            &.active{
+                .sidebar-link{
+                    padding-left: 50px;
+                }
+            }
         }
-    }
 }
 @each $color, $hexvalue in $all-colors {
     .sidebar-#{$color}{
@@ -54,7 +66,6 @@
             margin-bottom: .5rem;
         }
         .sidebar-brand{
-            background-color: hover($hexvalue);
             a{
                 color: contrast($color);
             }
@@ -64,7 +75,18 @@
                 .sidebar-link{
                     color: contrast($color);
                 }
+                &.active{
+                    .sidebar-link{
+                        background-color: hover($hexvalue);
+                    }
+                }
+            }
+        }
+
+        .sidebar-item:hover{
+            .sidebar-link{
+                background-color: hover($hexvalue);
             }
         }
     }
-} 
+}

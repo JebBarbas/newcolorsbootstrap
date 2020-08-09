@@ -14,9 +14,10 @@ You can download the file you prefer (.css or .min.css) directly, copying the co
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jebbarbas/newcolorsbootstrap/ncb.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jebbarbas/newcolorsbootstrap/ncb.min.css">
 ~~~
-Don't forget to add the .js file too (this one don't have .min because is already mini)
+Don't forget to add the .js file too
 ~~~
 <script src="https://cdn.jsdelivr.net/gh/jebbarbas/newcolorsbootstrap/ncb.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/jebbarbas/newcolorsbootstrap/ncb.min.js"></script>
 ~~~
 You can put the &lt;script&gt; in the &lt;head&gt; or in the &lt;body&gt;, it doesn't matter 'cause I use the event 'DOMContentLoaded' to apply the JS.
 
@@ -39,9 +40,9 @@ Once you have Bootstrap 4, use it normally, but you can use the colors: 'magic',
 - 'Callout' component.
 - 'Sidebar' component.
 - 'Circle' component.
-
+- 'Circle-State' component.
 ## Note
 I added also the SASS source code. Lov U All.
 
 ## Full Documentation.
-For the newest versions, CDN and documentation, go [Here](https://jebbarbas.herokuapp.com/publicaciones/tutoriales/ncb).
+For a detailed guide about how to use ncb.js see the file newcolorsbootstrap.pdf.
