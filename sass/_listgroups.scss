@@ -9,7 +9,7 @@
         }
 
         &.list-group-item-action.active{
-            color: #fff;
+            color: contrast($color);
             background-color: $hexvalue;
             border-color: $hexvalue;
         }

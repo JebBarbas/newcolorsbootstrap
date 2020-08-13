@@ -1,0 +1,99 @@
+.login{
+    height: 100vh;
+    width: 100vw;
+    color: #eee;
+    background-color: #eee;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 6968;
+
+    hr{
+        border: 1px solid #fff;
+    }
+    .login-form{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+        padding: 2.5rem;
+        background: rgba(0,0,0,.8);
+        box-sizing: border-box;
+        box-shadow: 0 15px 25px rgba(0,0,0,.5);
+        border-radius: .75rem;
+
+        .login-title{
+            margin: 0 0 2rem;
+            padding: 0;
+            color: #fff;
+        }
+
+        .login-group{
+            position: relative;
+
+            .login-control{
+                width: 100%;
+                padding: .75rem 0;
+                font-size: 1rem;
+                color: #fff;
+                margin-bottom: 2rem;
+                border: none;
+                border-bottom: 1px solid #fff;
+                outline: none;
+                background: transparent;
+                letter-spacing: 1px;
+
+                &:focus ~ .login-label,
+                &.focus ~ .login-label,
+                &:valid ~ .login-label,
+                &.valid ~ .login-label{
+                    top: -1.5rem;
+                    left: 0;
+                    color: #eee;
+                }
+            }
+
+            .login-label{
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: .75rem 0;
+                font-size: 1rem;
+                color: #fff;
+                pointer-events: none;
+                transition: 0.5s;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}
+@each $color, $hexvalue in $all-colors{
+    .login.login-#{$color}{
+        background-color: $hexvalue;
+        hr{
+            border: 1px solid $hexvalue;
+        }
+        a, .btn-link{
+            color: $hexvalue;
+        }
+        .login-form{
+            .login-group{
+                .login-control{
+                    &:focus ~ .login-label,
+                    &.focus ~ .login-label,
+                    &:valid ~ .login-label,
+                    &.valid ~ .login-label{
+                        color: $hexvalue;
+                    }
+                }
+            }
+        }
+    }
+}
+@each $px, $wid in $centerpoints {
+    @media(min-width: #{$px}){
+        .login-form {min-width: $wid;}
+    }
+}

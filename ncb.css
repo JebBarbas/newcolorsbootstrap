@@ -743,6 +743,336 @@
   background-color: #ff8193;
 }
 
+.login {
+  height: 100vh;
+  width: 100vw;
+  color: #eee;
+  background-color: #eee;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 6968;
+}
+
+.login hr {
+  border: 1px solid #fff;
+}
+
+.login .login-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2.5rem;
+  background: rgba(0, 0, 0, 0.8);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  border-radius: .75rem;
+}
+
+.login .login-form .login-title {
+  margin: 0 0 2rem;
+  padding: 0;
+  color: #fff;
+}
+
+.login .login-form .login-group {
+  position: relative;
+}
+
+.login .login-form .login-group .login-control {
+  width: 100%;
+  padding: .75rem 0;
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 2rem;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+  letter-spacing: 1px;
+}
+
+.login .login-form .login-group .login-control:focus ~ .login-label,
+.login .login-form .login-group .login-control.focus ~ .login-label,
+.login .login-form .login-group .login-control:valid ~ .login-label,
+.login .login-form .login-group .login-control.valid ~ .login-label {
+  top: -1.5rem;
+  left: 0;
+  color: #eee;
+}
+
+.login .login-form .login-group .login-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: .75rem 0;
+  font-size: 1rem;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+  letter-spacing: 1px;
+}
+
+.login.login-primary {
+  background-color: #007bff;
+}
+
+.login.login-primary hr {
+  border: 1px solid #007bff;
+}
+
+.login.login-primary a, .login.login-primary .btn-link {
+  color: #007bff;
+}
+
+.login.login-primary .login-form .login-group .login-control:focus ~ .login-label,
+.login.login-primary .login-form .login-group .login-control.focus ~ .login-label,
+.login.login-primary .login-form .login-group .login-control:valid ~ .login-label,
+.login.login-primary .login-form .login-group .login-control.valid ~ .login-label {
+  color: #007bff;
+}
+
+.login.login-secondary {
+  background-color: #6c757d;
+}
+
+.login.login-secondary hr {
+  border: 1px solid #6c757d;
+}
+
+.login.login-secondary a, .login.login-secondary .btn-link {
+  color: #6c757d;
+}
+
+.login.login-secondary .login-form .login-group .login-control:focus ~ .login-label,
+.login.login-secondary .login-form .login-group .login-control.focus ~ .login-label,
+.login.login-secondary .login-form .login-group .login-control:valid ~ .login-label,
+.login.login-secondary .login-form .login-group .login-control.valid ~ .login-label {
+  color: #6c757d;
+}
+
+.login.login-success {
+  background-color: #28a745;
+}
+
+.login.login-success hr {
+  border: 1px solid #28a745;
+}
+
+.login.login-success a, .login.login-success .btn-link {
+  color: #28a745;
+}
+
+.login.login-success .login-form .login-group .login-control:focus ~ .login-label,
+.login.login-success .login-form .login-group .login-control.focus ~ .login-label,
+.login.login-success .login-form .login-group .login-control:valid ~ .login-label,
+.login.login-success .login-form .login-group .login-control.valid ~ .login-label {
+  color: #28a745;
+}
+
+.login.login-info {
+  background-color: #17a2b8;
+}
+
+.login.login-info hr {
+  border: 1px solid #17a2b8;
+}
+
+.login.login-info a, .login.login-info .btn-link {
+  color: #17a2b8;
+}
+
+.login.login-info .login-form .login-group .login-control:focus ~ .login-label,
+.login.login-info .login-form .login-group .login-control.focus ~ .login-label,
+.login.login-info .login-form .login-group .login-control:valid ~ .login-label,
+.login.login-info .login-form .login-group .login-control.valid ~ .login-label {
+  color: #17a2b8;
+}
+
+.login.login-warning {
+  background-color: #ffc107;
+}
+
+.login.login-warning hr {
+  border: 1px solid #ffc107;
+}
+
+.login.login-warning a, .login.login-warning .btn-link {
+  color: #ffc107;
+}
+
+.login.login-warning .login-form .login-group .login-control:focus ~ .login-label,
+.login.login-warning .login-form .login-group .login-control.focus ~ .login-label,
+.login.login-warning .login-form .login-group .login-control:valid ~ .login-label,
+.login.login-warning .login-form .login-group .login-control.valid ~ .login-label {
+  color: #ffc107;
+}
+
+.login.login-danger {
+  background-color: #dc3545;
+}
+
+.login.login-danger hr {
+  border: 1px solid #dc3545;
+}
+
+.login.login-danger a, .login.login-danger .btn-link {
+  color: #dc3545;
+}
+
+.login.login-danger .login-form .login-group .login-control:focus ~ .login-label,
+.login.login-danger .login-form .login-group .login-control.focus ~ .login-label,
+.login.login-danger .login-form .login-group .login-control:valid ~ .login-label,
+.login.login-danger .login-form .login-group .login-control.valid ~ .login-label {
+  color: #dc3545;
+}
+
+.login.login-light {
+  background-color: #f8f9fa;
+}
+
+.login.login-light hr {
+  border: 1px solid #f8f9fa;
+}
+
+.login.login-light a, .login.login-light .btn-link {
+  color: #f8f9fa;
+}
+
+.login.login-light .login-form .login-group .login-control:focus ~ .login-label,
+.login.login-light .login-form .login-group .login-control.focus ~ .login-label,
+.login.login-light .login-form .login-group .login-control:valid ~ .login-label,
+.login.login-light .login-form .login-group .login-control.valid ~ .login-label {
+  color: #f8f9fa;
+}
+
+.login.login-dark {
+  background-color: #343a40;
+}
+
+.login.login-dark hr {
+  border: 1px solid #343a40;
+}
+
+.login.login-dark a, .login.login-dark .btn-link {
+  color: #343a40;
+}
+
+.login.login-dark .login-form .login-group .login-control:focus ~ .login-label,
+.login.login-dark .login-form .login-group .login-control.focus ~ .login-label,
+.login.login-dark .login-form .login-group .login-control:valid ~ .login-label,
+.login.login-dark .login-form .login-group .login-control.valid ~ .login-label {
+  color: #343a40;
+}
+
+.login.login-magic {
+  background-color: #ae42bd;
+}
+
+.login.login-magic hr {
+  border: 1px solid #ae42bd;
+}
+
+.login.login-magic a, .login.login-magic .btn-link {
+  color: #ae42bd;
+}
+
+.login.login-magic .login-form .login-group .login-control:focus ~ .login-label,
+.login.login-magic .login-form .login-group .login-control.focus ~ .login-label,
+.login.login-magic .login-form .login-group .login-control:valid ~ .login-label,
+.login.login-magic .login-form .login-group .login-control.valid ~ .login-label {
+  color: #ae42bd;
+}
+
+.login.login-juice {
+  background-color: #fd9800;
+}
+
+.login.login-juice hr {
+  border: 1px solid #fd9800;
+}
+
+.login.login-juice a, .login.login-juice .btn-link {
+  color: #fd9800;
+}
+
+.login.login-juice .login-form .login-group .login-control:focus ~ .login-label,
+.login.login-juice .login-form .login-group .login-control.focus ~ .login-label,
+.login.login-juice .login-form .login-group .login-control:valid ~ .login-label,
+.login.login-juice .login-form .login-group .login-control.valid ~ .login-label {
+  color: #fd9800;
+}
+
+.login.login-ocean {
+  background-color: #00cca3;
+}
+
+.login.login-ocean hr {
+  border: 1px solid #00cca3;
+}
+
+.login.login-ocean a, .login.login-ocean .btn-link {
+  color: #00cca3;
+}
+
+.login.login-ocean .login-form .login-group .login-control:focus ~ .login-label,
+.login.login-ocean .login-form .login-group .login-control.focus ~ .login-label,
+.login.login-ocean .login-form .login-group .login-control:valid ~ .login-label,
+.login.login-ocean .login-form .login-group .login-control.valid ~ .login-label {
+  color: #00cca3;
+}
+
+.login.login-cake {
+  background-color: #ffb4bf;
+}
+
+.login.login-cake hr {
+  border: 1px solid #ffb4bf;
+}
+
+.login.login-cake a, .login.login-cake .btn-link {
+  color: #ffb4bf;
+}
+
+.login.login-cake .login-form .login-group .login-control:focus ~ .login-label,
+.login.login-cake .login-form .login-group .login-control.focus ~ .login-label,
+.login.login-cake .login-form .login-group .login-control:valid ~ .login-label,
+.login.login-cake .login-form .login-group .login-control.valid ~ .login-label {
+  color: #ffb4bf;
+}
+
+@media (min-width: 0) {
+  .login-form {
+    min-width: 90vw;
+  }
+}
+
+@media (min-width: 576px) {
+  .login-form {
+    min-width: 80vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .login-form {
+    min-width: 60vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .login-form {
+    min-width: 40vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .login-form {
+    min-width: 40vw;
+  }
+}
+
 /* Things with only new colors */
 .btn-magic {
   color: #fff;
@@ -1323,7 +1653,7 @@ a.badge-cake.focus, a.badge-cake:focus {
 }
 
 .list-group-item-cake.list-group-item-action.active {
-  color: #fff;
+  color: #212529;
   background-color: #ffb4bf;
   border-color: #ffb4bf;
 }

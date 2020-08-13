@@ -41,6 +41,8 @@ Once you have Bootstrap 4, use it normally, but you can use the colors: 'magic',
 - 'Sidebar' component.
 - 'Circle' component.
 - 'Circle-State' component.
+- 'Login' component.
+
 ## Note
 I added also the SASS source code. Lov U All.
 

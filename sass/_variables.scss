@@ -37,13 +37,10 @@ $contrasts : (
     'cake' : $contrast-dark
 );
 
-$rainbow-steps : 360;
-$rainbow-duration : (
-    'xxs' : 0.5s,
-    'xs': 1s,
-    's' : 3s,
-    'm' : 5s,
-    'l' : 10s,
-    'xl' : 30s,
-    'xxl' : 60s,
+$centerpoints : (
+    '0': 90vw,
+    '576px': 80vw,
+    '768px': 60vw,
+    '992px': 40vw,
+    '1200px': 40vw
 );
