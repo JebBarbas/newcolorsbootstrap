@@ -394,7 +394,7 @@
 
 .sidebar-nav {
   list-style: none;
-  padding: 10;
+  padding: 0;
 }
 
 .sidebar-nav .sidebar-link {
