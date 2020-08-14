@@ -399,7 +399,7 @@
 
 .sidebar-nav .sidebar-link {
   text-decoration: none;
-  padding-left: 40px;
+  padding-left: 20px;
   display: flex;
   align-items: center;
   height: 100%;
@@ -412,11 +412,11 @@
 }
 
 .sidebar-nav .sidebar-item:hover .sidebar-link {
-  padding-left: 50px;
+  padding-left: 30px;
 }
 
 .sidebar-nav .sidebar-item.active .sidebar-link {
-  padding-left: 50px;
+  padding-left: 30px;
 }
 
 .sidebar-primary {

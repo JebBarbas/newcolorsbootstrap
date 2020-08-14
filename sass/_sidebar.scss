@@ -29,7 +29,7 @@
 
         .sidebar-link{
             text-decoration: none;
-            padding-left: 40px;
+            padding-left: 20px;
             display: flex;
             align-items: center;
             
@@ -46,12 +46,12 @@
         .sidebar-item{
             &:hover{
                 .sidebar-link{
-                    padding-left: 50px;
+                    padding-left: 30px;
                 }
             }
             &.active{
                 .sidebar-link{
-                    padding-left: 50px;
+                    padding-left: 30px;
                 }
             }
         }
