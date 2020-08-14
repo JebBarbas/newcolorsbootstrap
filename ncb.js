@@ -13,7 +13,7 @@ if(document.querySelector('script.add-bootstrap-css')){
     /* Se crea el <link> de ncb */
     let _link_ncb_ = document.createElement('link');
     _link_ncb_.setAttribute('rel','stylesheet');
-    _link_ncb_.setAttribute('href','https://cdn.jsdelivr.net/gh/jebbarbas/newcolorsbootstrap@v1.2.0/ncb.min.css');
+    _link_ncb_.setAttribute('href','https://cdn.jsdelivr.net/gh/jebbarbas/newcolorsbootstrap@v1.2.2/ncb.min.css');
     _link_ncb_.setAttribute('crossorigin','annonymus');
 
     /* Se meten los <link> en el <div> */
