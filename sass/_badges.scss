@@ -1,4 +1,4 @@
-@each $color, $hexvalue in $new-colors {
+@each $color, $hexvalue in $all-colors {
     .badge-#{$color}{
         color: contrast($color);
         background-color: $hexvalue;
